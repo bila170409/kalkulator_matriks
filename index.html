@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kalkulator Matriks</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Matriks</h1>
+        <div class="dimension-inputs">
+            <div class="input-group">
+                <label for="rowsA">Baris Matriks 1:</label>
+                <input type="number" id="rowsA" min="1" max="10" value="2" />
+            </div>
+            <div class="input-group">
+                <label for="colsA">Kolom Matriks 1:</label>
+                <input type="number" id="colsA" min="1" max="10" value="3" />
+            </div>
+            <div class="input-group">
+                <label for="rowsB">Baris Matriks 2:</label>
+                <input type="number" id="rowsB" min="1" max="10" value="3" />
+            </div>
+            <div class="input-group">
+                <label for="colsB">Kolom Matriks 2:</label>
+                <input type="number" id="colsB" min="1" max="10" value="4" />
+            </div>
+            <button id="generateBtn">Generate Matriks</button>
+        </div>
+
+        <div class="matrices">
+            <div class="matrix" id="matrixAContainer">
+                <h2>Matriks A</h2>
+                <div id="matrixA"></div>
+            </div>
+            <div class="matrix" id="matrixBContainer">
+                <h2>Matriks B</h2>
+                <div id="matrixB"></div>
+            </div>
+        </div>
+
+        <div class="operations">
+            <h2>Operasi</h2>
+            <button id="addBtn">Penjumlahan (+)</button>
+            <button id="subtractBtn">Pengurangan (-)</button>
+            <button id="multiplyBtn">Perkalian (×)</button>
+            <button id="transA">Transpose A</button>
+            <button id="transB">Transpose B</button>
+            <!-- <button id="detA">Determinan A</button>
+            <button id="detB">Determinan B</button>
+            <button id="invA">Invers A</button>
+            <button id="invB">Invers B</button> -->
+            
+        </div>
+
+        <div class="result">
+            <h2>Hasil</h2>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
